@@ -1,1 +1,1 @@
-select * from raw.jaffle_shop.customers
+select * from {{ source('jaffle_shop', 'customers') }} --raw.jaffle_shop.customers
